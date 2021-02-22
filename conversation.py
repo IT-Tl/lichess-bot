@@ -22,7 +22,7 @@ class Conversation:
         elif cmd == "name":
             self.send_reply(line, "{} (lichess-bot v{})".format(self.engine.name(), self.version))
         elif cmd == "howto":
-            self.send_reply(line, "How to run your own bot: lichess.org/api#tag/Chess-Bot")
+            self.send_reply(line, "To run your own bot, go to click on the GitHub link on my profile. It will be near the teams I am in. :)")
         elif cmd == "eval" and line.room == "spectator":
             stats = self.engine.get_stats()
             self.send_reply(line, ", ".join(stats))
